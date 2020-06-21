@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+html {
+    font-family: 'Karla', sans-serif; 
+    font-size: 16px;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+    padding: 75px 20px;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 14px 1px #00000033;
+    overflow: hidden;
+
+}
+
+.join {
+    background-color: white;
+    padding: 20px; 
+}
+
+.one {
+    color:hsl(179, 62%, 43%);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.two {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.three {
+    color: hsl(218, 22%, 67%);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.signup {
+    background-color: hsl(179, 62%, 43%);
+    padding: 20px; 
+    color: hsl(204, 43%, 93%);
+    
+}
+
+.four {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.five {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.six {
+    color: hsl(204, 43%, 93%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+span {
+    vertical-align: middle;
+    font-weight: 100;
+    color:hsl(204, 43%, 93%);
+    font-size: 1rem;
+}
+
+
+.button {
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    font-weight: 700;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 10px 1px #00000033;
+    margin-bottom: 20px;
+}
+
+.why {
+    background-color: hsl(180, 50%, 50%);
+    padding: 20px; 
+    color: hsl(204, 43%, 93%);
+
+}
+
+.seven {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.eight {
+   
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+footer {
+    padding-left: 20px;
+    color: hsl(228, 45%, 44%);
+   }
+
+footer a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 700px) {
+    
+    .container {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1440px;
+    }
+    
+    
+    .join {
+        grid-area: 1/1/2/3;
+    }
+
+        
+    .signup, .why {
+        grid-row: 2;
+        
+    }
+    
+
+    
+}
