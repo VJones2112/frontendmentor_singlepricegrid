@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+
 html {
-    font-family: 'Karla', sans-serif; 
+    font-family: 'Karla', sans-serif;
     font-size: 16px;
 }
 
 section {
-    min-height: 100vh;
-    width: 100%;
+    min-height: 90vh;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: hsl(204, 43%, 93%);
     padding: 75px 20px;
-    
+    margin-top: 1rem;
+    position: absolute;
+    top: -80px;
 }
 
 .container {
@@ -24,16 +27,15 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 14px 1px #00000033;
     overflow: hidden;
-
 }
 
 .join {
     background-color: white;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .one {
-    color:hsl(179, 62%, 43%);
+    color: hsl(179, 62%, 43%);
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -52,16 +54,16 @@ section {
 
 .signup {
     background-color: hsl(179, 62%, 43%);
-    padding: 20px; 
+    padding: 20px;
     color: hsl(204, 43%, 93%);
-    
+
 }
 
 .four {
     font-size: 1.3rem;
     font-weight: 700;
     color: white;
-    
+
 }
 
 .five {
@@ -81,10 +83,9 @@ section {
 span {
     vertical-align: middle;
     font-weight: 100;
-    color:hsl(204, 43%, 93%);
+    color: hsl(204, 43%, 93%);
     font-size: 1rem;
 }
-
 
 .button {
     background-color: hsl(71, 73%, 54%);
@@ -103,7 +104,7 @@ span {
 
 .why {
     background-color: hsl(180, 50%, 50%);
-    padding: 20px; 
+    padding: 20px;
     color: hsl(204, 43%, 93%);
 
 }
@@ -115,7 +116,7 @@ span {
 }
 
 .eight {
-   
+
     font-weight: 400;
     line-height: 1.5rem;
     font-size: 1rem;
@@ -124,31 +125,37 @@ span {
 footer {
     padding-left: 20px;
     color: hsl(228, 45%, 44%);
-   }
+}
 
 footer a {
     text-decoration: none;
     color: hsl(228, 45%, 44%);
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 700px) {
+
+    section {
+        width: 100%;
+    }
     
     .container {
         grid-template-columns: 1fr 1fr;
-        max-width: 1440px;
+        max-width: 900px;
+        height: 90vh;
     }
-    
-    
+
     .join {
         grid-area: 1/1/2/3;
     }
 
-        
-    .signup, .why {
+    .signup,
+    .why {
         grid-row: 2;
-        
     }
-    
 
-    
+
 }
